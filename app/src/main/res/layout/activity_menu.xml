@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bac2"
+    tools:context=".Menu">
+
+    <Button
+        android:id="@+id/btnDaftarfilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/holo_purple"
+        android:onClick="button_onClick"
+        android:text="Daftar Film"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnLihatPemesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="button_onClick"
+        android:text="Lihat Daftar Pemesan"
+        android:textSize="18dp"
+        android:textColor="@color/colorWhite"
+        android:background="@android:color/holo_purple"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnTambahPemesan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDaftarfilm"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnTambahPemesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:onClick="button_onClick"
+        android:text="Tambah Pemesan Baru"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp"
+        android:background="@android:color/holo_purple"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLihatPemesan"
+        tools:ignore="OnClick" />
+
+</android.support.constraint.ConstraintLayout>
